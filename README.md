@@ -40,6 +40,12 @@ Ensure you have the following CLI tools installed:
   ```bash
   sudo apt-get update && sudo apt-get install -y curl jq coreutils
 
+### Gemini API
+
+You need to create an account on google cloud and obtain an api token to use this bash script. New accounts have free credit which is compatible with this program. Once you create your API Token place it into the .env file in the GEMINI_API_KEY variable.
+
+---
+
 ## Character Creation
 
 To create a totally random character using defaults try ```bash generate.character.sh```
