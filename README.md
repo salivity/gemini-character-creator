@@ -39,3 +39,11 @@ Ensure you have the following CLI tools installed:
 - **Debian / Ubuntu:**
   ```bash
   sudo apt-get update && sudo apt-get install -y curl jq coreutils
+
+## Character Creation
+
+To create a totally random character using defaults try ```bash generate.character.sh```
+
+To change the style of the output image change the prompt with the prompt option EG ```-prompt "Sci-Fi Cyborg"```
+
+The output directory can be changed with the name option EG ```-name "cyborg"
