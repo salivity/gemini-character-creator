@@ -46,4 +46,4 @@ To create a totally random character using defaults try ```bash generate.charact
 
 To change the style of the output image change the prompt with the prompt option EG ```-prompt "Sci-Fi Cyborg"```
 
-The output directory can be changed with the name option EG ```-name "cyborg"
+The output directory can be changed with the name option EG ```-name "cyborg"```
