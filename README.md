@@ -1,2 +1,36 @@
 # gemini-character-creator
-Creates the front, side and back view of a pixel art game character using gemini api
+
+A lightweight Bash CLI tool that generates multi-angle 16-bit RPG pixel art sprites (Front, Side, and Back views) using the Gemini Image Generation API (`gemini-3-pro-image`).
+
+To maintain visual consistency across all angles, the script uses a **sequential contextual generation pipeline**:
+1. Generates the **Front View** from your text prompt.
+2. Feeds the Front View back into the model to generate a matching **Side Profile View**.
+3. Feeds both Front and Side views to generate the matching **Back View**.
+
+All sprites are output on a uniform green screen (`#00FF00`) background for easy chroma-keying and sprite sheet integration.
+
+---
+
+## Features
+
+- **Sequential Consistency:** Keeps armor, palette, weapons, and hair identical across Front, Side, and Rear angles using multimodal input chaining.
+- **Game-Ready Backgrounds:** Isolated character output on `#00FF00` green screen with crisp pixel edges.
+- **Custom Naming & Organization:** Automatically saves rendered PNGs into organized folders under `characters/`.
+- **Zero Heavy Frameworks:** Pure Bash script leveraging standard CLI utilities (`curl`, `jq`, `base64`).
+
+---
+
+## Prerequisites
+
+Ensure you have the following CLI tools installed:
+
+- `bash` (v4.0+)
+- `curl`
+- `jq`
+- `coreutils` (`base64`, `tr`, `head`)
+
+### Installing Dependencies
+
+- **Debian / Ubuntu:**
+  ```bash
+  sudo apt-get update && sudo apt-get install -y curl jq coreutils
