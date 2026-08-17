@@ -2,12 +2,9 @@
 
 A lightweight Bash CLI tool that generates multi-angle 16-bit RPG pixel art sprites (Front, Side, and Back views) using the Gemini Image Generation API (`gemini-3-pro-image`).
 
-| Font        | Side        | Back        |
-| ----------- | ----------- | ----------- |
-| ![Front View](https://raw.githubusercontent.com/salivity/gemini-character-creator/refs/heads/main/initial/characters/rpg_1/front.png) 
-      | ![Side View](https://raw.githubusercontent.com/salivity/gemini-character-creator/refs/heads/main/initial/characters/rpg_1/side.png) 
-       | ![Back View](https://raw.githubusercontent.com/salivity/gemini-character-creator/refs/heads/main/initial/characters/rpg_1/back.png)
-            |
+| Font                                                                                                                                      | Side                                                                                                                                  | Back                                                                                                                                |
+| -----------                                                                                                                               | -----------                                                                                                                           | -----------                                                                                                                         |
+| ![Front View](https://raw.githubusercontent.com/salivity/gemini-character-creator/refs/heads/main/initial/characters/rpg_1/front.png)     | ![Side View](https://raw.githubusercontent.com/salivity/gemini-character-creator/refs/heads/main/initial/characters/rpg_1/side.png)   | ![Back View](https://raw.githubusercontent.com/salivity/gemini-character-creator/refs/heads/main/initial/characters/rpg_1/back.png) |
 
 
 To maintain visual consistency across all angles, the script uses a **sequential contextual generation pipeline**:
