@@ -1,4 +1,4 @@
-# Gemini Character Creator
+# Pixel Art Character Generator
 
 A lightweight Bash CLI tool that generates multi-angle 16-bit RPG pixel art sprites (Front, Side, and Back views) using the Gemini Image Generation API (`gemini-3-pro-image`).
 
