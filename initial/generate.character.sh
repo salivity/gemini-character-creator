@@ -119,7 +119,7 @@ send_request_and_save() {
 # -------------------------------------------------------------------------
 view_name="front"
 output_file="${OUTPUT_DIR}/${view_name}.png"
-full_prompt="orthographic front view sprite sheet asset, 16-bit retro pixel art game sprite of ${CHARACTER_PROMPT}. FRONT ANGLE ONLY facing the viewer directly. Symmetrical idle standing pose, arms at sides, head facing straight forward. Single isolated character on uniform solid green screen (#00FF00). No shadows, no ground, no gradient, crisp pixel edges, 1:1 square aspect ratio. There should only be a single character in the image. There should be nothing in the background."
+full_prompt="orthographic front view sprite sheet asset, 16-bit retro pixel art game sprite of ${CHARACTER_PROMPT}. FRONT ANGLE ONLY facing the viewer directly. Symmetrical idle standing pose, arms at sides, head facing straight forward. Single isolated character on uniform solid grey (#191919). Entire outer border and silhouette must have a continuous, crisp, solid pure black (#000000) outline without anti-aliasing. No shadows, no ground, no gradient, crisp pixel edges, 1:1 square aspect ratio. There should only be a single character in the image. There should be nothing in the background."
 
 echo "Generating ${view_name} view (Base Reference)..."
 
@@ -143,8 +143,9 @@ Render the character from the reference image in a strict pure side-profile pers
 CRITICAL INSTRUCTIONS:
 - Pose: Strict 90-degree lateral side view. Only one profile side of the face/body should be visible.
 - Identity: Same clothing, colors, weapons, armor, and 16-bit pixel art style as reference.
+- Outline: Full continuous solid black (#000000) outer outline bordering the entire character silhouette, hard pixel edges, no edge anti-aliasing.
 - Exclusions: Absolutely NOT a front view, 3/4 angle, or diagonal view. Do not show both shoulders symmetrically.
-- Background: Solid pure uniform green screen (#00FF00) only."
+- Background: Solid pure uniform grey (#191919) only."
 
 echo "Generating ${view_name} view (Side Profile)..."
 
@@ -174,9 +175,10 @@ Render the character from the reference images seen directly from behind.
 CRITICAL INSTRUCTIONS:
 - Pose: Character has their back fully turned toward the camera.
 - Visible features: Back of the head, back of the hair/helmet, back of torso, spine, cape, rear armor, back of shoes.
+- Outline: Full continuous solid black (#000000) outer outline bordering the entire character silhouette, hard pixel edges, no edge anti-aliasing.
 - Exclusions: NO EYES, NO FACE, NO MOUTH, NO NOSE, NO CHEST DETAILS. The character must NOT look back over their shoulder.
 - Identity: Maintain all color palette and 16-bit pixel art styling from reference images.
-- Background: Solid pure uniform green screen (#00FF00) only."
+- Background: Solid pure uniform grey (#191919) only."
 
 echo "Generating ${view_name} view (Rear / Back)..."
 
